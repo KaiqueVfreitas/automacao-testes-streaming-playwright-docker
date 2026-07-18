@@ -1,0 +1,13 @@
+{
+  "name": "automacao-testes-streaming-playwright-docker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KaiqueVfreitas/automacao-testes-streaming-playwright-docker.git",
+  "author": "KaiqueVfreitas <kaique.vieira2502eu@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1"
+  },
+  "scripts": {}
+}
