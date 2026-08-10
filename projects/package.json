@@ -2,6 +2,7 @@
    "name": "automacao-testes-streaming-playwright-docker",
    "version": "1.0.0",
    "main": "index.js",
+   "type": "module",
    "repository": "https://github.com/KaiqueVfreitas/automacao-testes-streaming-playwright-docker.git",
    "author": "KaiqueVfreitas <kaique.vieira2502eu@outlook.com>",
    "license": "MIT",

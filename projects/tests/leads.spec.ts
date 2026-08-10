@@ -1,10 +1,13 @@
 import { test, expect } from '@playwright/test';
+import LandingPageActions from '../pages/LandingPagesActions';
 
 test('deve cadastrar um lead na lista de espera', async ({ page }) => {
-   //Visit
-   //openLeadModal
-   //submitLeadFor
-   // toastHaveText
+   const landingPageActions = new LandingPageActions (page);
+
+   await landingPageActions.visit()
+   await landingPageActions.openLeadModal()
+   await landingPageActions.submitLeadFor()
+   await landingPageActions.toastHaveText()
 });
 
 test('não deve cadastrar emails inválidos', async ({ page }) => {
