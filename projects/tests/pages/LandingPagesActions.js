@@ -14,18 +14,16 @@ export default class LangingPageActions {
       await expect(this.page.getByTestId('modal').getByRole('heading')).toHaveText('Fila de espera');
    }
 
-   async submitLeadFor() {
-      await this.page.getByPlaceholder('Informe seu nome').fill('Kaique Vieira de Freitas');
-      await this.page.getByPlaceholder('Informe seu email').fill('kaiqueffreitasvieira@gmail.com');
+   async submitLeadFor(name, email) {
+      await this.page.getByPlaceholder('Informe seu nome').fill(name);
+      await this.page.getByPlaceholder('Informe seu email').fill(email);
       await this.page
          .getByTestId('modal')
          .getByRole('button', { name: /Quero entrar na fila/ })
          .click();
    }
 
-   async toastHaveText() {
-      const expectedMsg = 'Agradecemos por compartilhar seus dados conosco. Em breve, nossa equipe entrará em contato!';
-
+   async toastHaveText(expectedMsg) {
       await expect(this.page.locator('.toast')).toHaveText(expectedMsg);
       await expect(this.page.locator('.toast')).toBeHidden({ timeout: 10000 });
    }
