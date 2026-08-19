@@ -1,6 +1,6 @@
-import { test, expect } from '@playwright/test';
-import LandingPageActions from '../pages/LandingPagesActions';
-import { fa, faker } from '@faker-js/faker';
+import { test } from '@playwright/test';
+import LandingPageActions from '../pages/LandingPageActions';
+import { faker } from '@faker-js/faker';
 
 let landingPageActions;
 test.beforeEach(async ({ page }) => {
